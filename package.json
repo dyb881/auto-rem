@@ -1,0 +1,41 @@
+{
+  "name": "@dyb881/auto-rem",
+  "version": "0.1.2",
+  "description": "自动计算rem，直接使用rem无缝替换px，即可达到等比例兼容屏幕尺寸",
+  "main": "./lib/index.js",
+  "types": "./lib/index.d.ts",
+  "typings": "./lib/index.d.ts",
+  "style": "./lib/style.css",
+  "less": "./src/style.less",
+  "scripts": {
+    "build": "tsc && lessc ./src/style.less > ./lib/style.css",
+    "patch": "npm version patch",
+    "minor": "npm version minor",
+    "major": "npm version major",
+    "push": "yarn build && npm publish --access=public"
+  },
+  "author": "dyb881",
+  "license": "ISC",
+  "devDependencies": {
+    "typescript": "^3.4.5",
+    "less": "^3.9.0"
+  },
+  "dependencies": {
+    "@types/react": "^16.8.18",
+    "@types/react-dom": "^16.8.4",
+    "react": "^16.8.6",
+    "react-dom": "^16.8.6"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dyb881/auto-rem.git"
+  },
+  "keywords": [
+    "auto",
+    "rem"
+  ],
+  "bugs": {
+    "url": "https://github.com/dyb881/auto-rem/issues"
+  },
+  "homepage": "https://github.com/dyb881/auto-rem#readme"
+}
