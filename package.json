@@ -1,6 +1,6 @@
 {
   "name": "@dyb881/auto-rem",
-  "version": "0.1.2",
+  "version": "0.1.3",
   "description": "自动计算rem，直接使用rem无缝替换px，即可达到等比例兼容屏幕尺寸",
   "main": "./lib/index.js",
   "types": "./lib/index.d.ts",
