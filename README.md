@@ -16,7 +16,8 @@ isResize 是否绑定 resize 事件<br>
 ```
 import autoRem from '@dyb881/auto-rem';
 
-autoRem(320, 750, true);
+const ar = autoRem(320, 750, true);
+ar(); // 移除 resize 事件监听
 ```
 
 style.css

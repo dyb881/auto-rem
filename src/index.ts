@@ -8,7 +8,11 @@ const autoRem = (min: number, max: number, isResize?: boolean) => {
     htmlstyle.fontSize = (((w > max && max) || (w < min && min) || w) / max) * 100 + 'px';
   };
   resize();
-  isResize && window.addEventListener('resize', resize);
+  if (isResize) {
+    window.addEventListener('resize', resize);
+    return () => window.removeEventListener('resize', resize);
+  }
+  return () => {};
 };
 
 export default autoRem;
